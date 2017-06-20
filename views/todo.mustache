@@ -1,0 +1,42 @@
+<link href="/styles.css" rel="stylesheet" type="text/css">
+
+
+<div class="usersContainer">
+	{{#users}}
+	<div class="user">
+		<img class="firstAvatar" src="{{avatar}}">
+		<p class="name">{{name}}</p>
+
+		{{#job}}
+		<p>{{job}}, {{company}}</p>
+		{{/job}} {{^job}}
+		<div class="hire">Available for hire</div>{{/job}}
+
+	</div>
+	{{/users}}
+</div>
+
+<br>
+<br>
+
+<div class="individualProfile">
+	{{#users}}
+	<div class="individualUsers">
+		<img id="avatarPic" src="{{avatar}}">
+		<div id="largeName">{{name}}</div>
+<div class="firstLine">
+		<div>{{#address.city}} {{address.city}},{{/address.city}} {{address.country}} | {{#job}}{{job}}, {{company}}
+		{{/job}} {{^job}}</div> <div class="hire"> Available for hire {{/job}}</div>
+</div>
+
+		<div>{{email}} | {{phone}}</div>
+
+		{{#university}}
+		<div><b>Education</b> {{university}}</div>
+		{{/university}}
+
+		<div><b>Skills</b> {{skills}}</div>
+
+	</div>
+	{{/users}}
+	<div>

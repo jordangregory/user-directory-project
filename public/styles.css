@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.user {
+  flex: 0 20%;
+  border: 1px solid black;
+  font-family: sans-serif;
+  margin: 5px;
+}
+
+.firstAvatar {
+  margin-left: 50px;
+}
+
+.name {
+  color: #467BCA;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.hire {
+  color: red;
+}
+
+.individualProfile {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.individualUsers {
+  margin: 10px;
+}
+
+#avatarPic {
+  border-radius: 50%;
+  border: 1px solid black;
+  float: left;
+}
+
+#largeName {
+  font-size: 30px;
+}
+.firstLine {
+  display: flex;
+  flex-wrap: wrap;
+}
