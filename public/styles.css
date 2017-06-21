@@ -2,51 +2,57 @@
   box-sizing: border-box;
 }
 
-.usersContainer {
+.firstUsersContainer {
   display: flex;
   flex-wrap: wrap;
 }
 .user {
-  flex: 0 20%;
+  flex: 0 23%;
   border: 1px solid black;
   font-family: sans-serif;
   margin: 5px;
 }
 
 .firstAvatar {
-  margin-left: 50px;
+  margin-left: 71px;
 }
 
-.name {
+.firstName {
   color: #467BCA;
   font-size: 30px;
   margin-left: 10px;
 }
 
-.hire {
-  color: red;
+.jobCompany {
+  margin-left: 10px;
 }
 
-.individualProfile {
-  display: flex;
-  flex-direction: column;
+.hire1 {
+  color: red;
+  margin-left: 10px;
+}
+
+/*BOTTOM SECTION*/
+
+.secondUserContainer {
   font-family: sans-serif;
+  margin-top: 10rem;
 }
 
 .individualUsers {
-  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #avatarPic {
   border-radius: 50%;
   border: 1px solid black;
-  float: left;
 }
 
-#largeName {
-  font-size: 30px;
+.infoWrapper {
+  margin-left: 20px;
 }
-.firstLine {
+
+.schoolSkillsWrapper {
   display: flex;
-  flex-wrap: wrap;
 }

@@ -1,42 +1,46 @@
 <link href="/styles.css" rel="stylesheet" type="text/css">
 
 
-<div class="usersContainer">
+<div class="firstUsersContainer">
 	{{#users}}
 	<div class="user">
 		<img class="firstAvatar" src="{{avatar}}">
-		<p class="name">{{name}}</p>
-
+		<p class="firstName">{{name}}</p>
 		{{#job}}
-		<p>{{job}}, {{company}}</p>
+		<p class="jobCompany">{{job}}, {{company}}</p>
 		{{/job}} {{^job}}
-		<div class="hire">Available for hire</div>{{/job}}
-
+		<div class="hire1">Available for hire</div>
+		{{/job}}
 	</div>
 	{{/users}}
 </div>
 
-<br>
-<br>
 
-<div class="individualProfile">
+<div class="secondUserContainer">
 	{{#users}}
 	<div class="individualUsers">
-		<img id="avatarPic" src="{{avatar}}">
-		<div id="largeName">{{name}}</div>
-<div class="firstLine">
-		<div>{{#address.city}} {{address.city}},{{/address.city}} {{address.country}} | {{#job}}{{job}}, {{company}}
-		{{/job}} {{^job}}</div> <div class="hire"> Available for hire {{/job}}</div>
-</div>
+		<div class="imageHolder">
+			<img id="avatarPic" src="{{avatar}}">
+		</div>
+		<div class="infoWrapper">
+			<h1 class="secondName">{{name}}</h1>
+			<p>{{#address.city}} {{address.city}},{{/address.city}} {{address.country}} | {{#job}}{{job}}, {{company}} {{/job}} {{^job}}
+				Available for hire {{/job}}</p>
+			<p>{{email}} | {{phone}}</p>
+		</div>
+	</div>
 
-		<div>{{email}} | {{phone}}</div>
 
-		{{#university}}
-		<div><b>Education</b> {{university}}</div>
-		{{/university}}
+	<div class="schoolSkillsWrapper">
 
-		<div><b>Skills</b> {{skills}}</div>
+		<div>{{#university}}Education
+			<p class="education">{{university}}</p>
+			{{/university}}
+		</div>
 
+		<div>Skills
+			<p class="skills">{{skills}}</p>
+		</div>
 	</div>
 	{{/users}}
-	<div>
+</div>
