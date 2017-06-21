@@ -33,14 +33,10 @@
 
 	<div class="schoolSkillsWrapper">
 
-		<div>{{#university}}Education
-			<p class="education">{{university}}</p>
-			{{/university}}
-		</div>
-
-		<div>Skills
-			<p class="skills">{{skills}}</p>
-		</div>
+		{{#university}}
+		<p class="education"><b>Education</b> {{university}}</p>
+		{{/university}}
+		<p class="skills"><b>Skills</b> {{skills}}</p>
 	</div>
 	{{/users}}
 </div>

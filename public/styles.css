@@ -36,7 +36,7 @@
 
 .secondUserContainer {
   font-family: sans-serif;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .individualUsers {
@@ -54,5 +54,6 @@
 }
 
 .schoolSkillsWrapper {
-  display: flex;
+  margin-left: 94px;
+  margin-bottom: 5rem;
 }
